@@ -57,9 +57,9 @@ No backend or environment variables are required for this static portfolio.
 
 ## Customize
 
-- Main content: `src/main.jsx`
+- Main content: `src/main.jsx`  
 - Styling and animations: `src/style.css`
 - Resume file: `public/assets/Balaraman-S-Resume.pdf`
 =======
 # balaraman-portfolio
->>>>>>> 2d7d0b4d50fee1a57a9f72057859ca3c3c22f474
+>>>>>>
