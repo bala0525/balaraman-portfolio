@@ -60,7 +60,7 @@ function App(){
   const root=useRef(null); const audioRef=useRef(null); const {scrollYProgress}=useScroll(); const progress=useSpring(scrollYProgress,{stiffness:100,damping:25});
   useEffect(()=>{const lenis=new Lenis({duration:1.15,smoothWheel:true});let raf;const tick=t=>{lenis.raf(t);raf=requestAnimationFrame(tick)};raf=requestAnimationFrame(tick);return()=>{cancelAnimationFrame(raf);lenis.destroy()}},[]);
   useEffect(()=>{document.documentElement.dataset.theme=theme;},[theme]);
-  useEffect(()=>{if(intro){document.body.classList.add('intro-lock');const t=setTimeout(()=>finishIntro(),13500);return()=>{clearTimeout(t);document.body.classList.remove('intro-lock')}}},[intro]);
+  useEffect(()=>{if(intro){document.body.classList.add('intro-lock');const t=setTimeout(()=>finishIntro(),5000);return()=>{clearTimeout(t);document.body.classList.remove('intro-lock')}}},[intro]);
   useEffect(()=>{const ctx=gsap.context(()=>{gsap.from('.hero-copy > *',{y:35,opacity:0,stagger:.13,duration:1.1,ease:'power4.out',delay:intro?0:.2});gsap.from('.hero-status',{x:35,opacity:0,duration:1.2,ease:'power3.out',delay:.55});},root);return()=>ctx.revert()},[intro]);
   useEffect(()=>{const sections=[...document.querySelectorAll('section[id]')];const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){const label=e.target.dataset.nav;if(label)setActive(label)}}),{rootMargin:'-35% 0px -55% 0px'});sections.forEach(s=>obs.observe(s));return()=>obs.disconnect()},[]);
   function finishIntro(){setIntro(false);sessionStorage.setItem('introSeen','1');document.body.classList.remove('intro-lock')}
