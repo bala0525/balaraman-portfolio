@@ -61,5 +61,5 @@ No backend or environment variables are required for this static portfolio.
 - Styling and animations: `src/style.css`
 - Resume file: `public/assets/Balaraman-S-Resume.pdf`
 =======
-# balaraman-portfolio
+
 >>>>>>
