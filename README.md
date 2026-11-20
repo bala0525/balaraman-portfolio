@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Balaraman S. — Cinematic Developer Portfolio
 
 A React + Vite portfolio inspired by the approved Vice City sunset reference: pink/peach/coral skies, deep-plum surfaces, neon pink details, floating navigation, custom dashboard previews and cinematic motion. No people, avatars or silhouettes are used.
@@ -59,3 +60,6 @@ No backend or environment variables are required for this static portfolio.
 - Main content: `src/main.jsx`
 - Styling and animations: `src/style.css`
 - Resume file: `public/assets/Balaraman-S-Resume.pdf`
+=======
+# balaraman-portfolio
+>>>>>>> 2d7d0b4d50fee1a57a9f72057859ca3c3c22f474
